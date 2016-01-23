@@ -23,10 +23,36 @@
 
     </head>
     <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsible" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">My Site</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapsible">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#site">My Site</a>
+                        </li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#links">Links</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <!-- Always use the full width of the viewport. We could also use the class "container" which would pick a
              fixed width for the container that fits within the viewport -->
         <div class="container-fluid">
-            <h1>My Responsive Site</h1>
+            <h1 id="site">My Responsive Site</h1>
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <h4>Original Content</h4>
@@ -53,7 +79,7 @@
 
             <div class="row">
                 <div class="col-md-offset-2 col-md-8">
-                    <h1>Feature comparison</h1>
+                    <h1 id="features">Feature comparison</h1>
                     <p class="lead">
                         Instead of shrinking, this table will gain a horizontal scrollbar when the viewport is narrow.
                     </p>
@@ -108,7 +134,7 @@
                 </div>
             </div>
 
-            <h1>Interesting links</h1>
+            <h1 id="links">Interesting links</h1>
             <p class="lead">
                 You can use a different column width for each breakpoint.
             </p>
