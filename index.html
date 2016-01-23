@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Mostly for security. Certain sequences of characters can be misinterpreted by the browser if this is not set. -->
+        <meta charset="utf-8">
+
+        <!-- Tells IE to not use any of its compatibility modes, this is a modern site designed for current browsers. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Render the page using the full width of the screen on mobile devices and keep the zoom the same,
+             don't suddenly zoom in when switching to landscape just because the viewport got wider. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>My Responsive Site</title>
+
+        <!-- Latest compiled and minified CSS, could also be served directly from your site -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+                integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+                integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
     </head>
     <body>
-        <h1>My Responsive Site</h1>
-        <p>
-        Hey, it's a start! As the size of the viewport changes, the content is resized to display appropriately. Web browsers are already responsive by default, but as you add more and more complex components it takes extra effort to preserve that property. What more could you ask for? Buttons, widgets, columns, navigation, images, pretty styling? We will get there.
-        </p>
+        <!-- Always use the full width of the viewport. We could also use the class "container" which would pick a
+             fixed width for the container that fits within the viewport -->
+        <div class="container-fluid">
+            <h1>My Responsive Site</h1>
+            <p>
+            Hey, it's a start! As the size of the viewport changes, the content is resized to display appropriately. Web browsers are already responsive by default, but as you add more and more complex components it takes extra effort to preserve that property. What more could you ask for? Buttons, widgets, columns, navigation, images, pretty styling? We will get there.
+            </p>
+        </div>
+
+        <!-- Latest compiled and minified jQuery and Bootstrap JS, could also be served directly from your site.
+             Keep at the end of the body so it doesn't delay initial display of the page -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+                integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </body>
 </html>
