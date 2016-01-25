@@ -21,9 +21,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
                 integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+        <link rel="stylesheet" href="site.css">
+
     </head>
     <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsible" aria-expanded="false">
@@ -61,7 +63,8 @@
         <div class="container-fluid">
             <img src="banner_img_1x.jpg" class="img-responsive"></img>
             <small>&copy; Photo by <a href="https://www.flickr.com/photos/jamesthefirst/">Jamesthe1st</a> used according to the terms of <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> cropped and resized.</small>
-            <h1 id="site">My Responsive Site</h1>
+            <a class="navanchor" id="site"></a>
+            <h1>My Responsive Site</h1>
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div id="carousel-test" class="carousel slide" data-ride="carousel">
@@ -143,7 +146,8 @@
 
             <div class="row">
                 <div class="col-md-offset-2 col-md-8">
-                    <h1 id="features">Feature comparison</h1>
+                    <a class="navanchor" id="features"></a>
+                    <h1>Feature comparison</h1>
                     <p class="lead">
                         Instead of shrinking, this table will gain a horizontal scrollbar when the viewport is narrow.
                     </p>
@@ -221,7 +225,8 @@
                 </div>
             </div>
 
-            <h1 id="links">Interesting links</h1>
+            <a class="navanchor" id="links"></a>
+            <h1>Interesting links</h1>
             <p class="lead">
                 You can use a different column width for each breakpoint.
             </p>
@@ -288,5 +293,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
                 integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="site.js"></script>
     </body>
 </html>

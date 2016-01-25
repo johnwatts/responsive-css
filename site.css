@@ -1,0 +1,14 @@
+body {
+    padding-top: 50px; /* Need to reserve space or the nav bar will always cover the top of the page. */
+}
+
+/*
+    When navigating to a section, reserve space for the fixed header.
+    http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
+*/
+a.navanchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
