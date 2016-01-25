@@ -61,7 +61,8 @@
         <!-- Always use the full width of the viewport. We could also use the class "container" which would pick a
              fixed width for the container that fits within the viewport -->
         <div class="container-fluid">
-            <img src="banner_img_1x.jpg" class="img-responsive"></img>
+            <!-- Retina image uses CSS queries to pick the high DPI image when appropriate -->
+            <div id="banner-img"></div>
             <small>&copy; Photo by <a href="https://www.flickr.com/photos/jamesthefirst/">Jamesthe1st</a> used according to the terms of <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> cropped and resized.</small>
             <a class="navanchor" id="site"></a>
             <h1>My Responsive Site</h1>
@@ -293,6 +294,5 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
                 integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <script src="site.js"></script>
     </body>
 </html>

@@ -12,3 +12,48 @@ a.navanchor {
     top: -60px;
     visibility: hidden;
 }
+
+#banner-img {
+    /* Default height for extra small devices */
+    height: 100px;
+    width: 100%;
+
+    /* Default non-retina image for lower DPI displays */
+    background-image: url("banner_img_1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+    Switch to retina image for higher DPI displays
+    Inspired by http://getbootstrap.com/css/#less-mixins-retina-images
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    #banner-img {
+        background-image: url("banner_img_2x.jpg");
+    }
+}
+
+/* Adjust height for different devices */
+@media (min-width: 768px) {
+    #banner-img {
+        height: 130px;
+    }
+}
+
+@media (min-width: 992px) {
+    #banner-img {
+        height: 160px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #banner-img {
+        height: 200px;
+    }
+}
