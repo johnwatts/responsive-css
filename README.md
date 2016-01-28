@@ -1,6 +1,6 @@
 # Powerpoint presentation
 
-<a href="https://github.com/johnwatts/responsive-css/blob/master/Responsive%20Design.pptx">Download</a>
+<a href="https://github.com/johnwatts/responsive-css/blob/master/Responsive%20Design.pptx?raw=true">Download</a>
 
 # Exercises
 
